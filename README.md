@@ -7,6 +7,9 @@ I just did this to go over spring's mvc configurations and how a spring applicat
 
 add in lib directory 
 hibernate-release-5.2.0.Final jar file
+
 javax.servlet.jsp.jstl-1.2.1 jar file
+
 javax.servlet.jsp.jstl-api-1.2.1 jar file
+
 spring-5.3.9-dist jar file
