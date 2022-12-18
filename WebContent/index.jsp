@@ -18,17 +18,18 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">LeHeronCedre LH<sub>c</sub></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
@@ -52,6 +53,7 @@
       </div>
     </div>
   </nav>
+
 
   <section id="hero" class="hero d-flex align-items-center section-bg" style="background-color: gray">
     <div class="container">
@@ -212,7 +214,7 @@
           </div>
         </div><!-- End Stats Item -->
 
-        <div class="col-lg-3 col-md-6" style="color: white; font-size: x-large;" >
+        <div class="col-lg-3 col-md-6" style="color: white; font-size: x-large;">
           <div class="stats-item">
             <span></span>
             <p>Hours Of Support</p>
