@@ -74,7 +74,7 @@ tr:nth-child(odd) {
   background: #cccccc;
 }
 
-.call-us{
+.call-us {
   left: 10%;
   right: 10%;
   bottom: 10%;
@@ -85,19 +85,17 @@ tr:nth-child(odd) {
   position: absolute;
 }
 
+.call-us p {
+  color: red;
+}
+
 /*--------------------------------------------------------------
 # About us 
 --------------------------------------------------------------*/
 
 .mx-auto p > span {
-	color: red;
+  color: red;
 }
-
-
-.call-us p {
-	color: red;
-}
-
 
 /*--------------------------------------------------------------
 # Sections & Section Header
@@ -130,9 +128,6 @@ section {
   margin: 0;
   font-size: 48px;
   font-weight: 400;
-}
-
-.section-header p span {
 }
 
 
@@ -215,8 +210,9 @@ section {
   }
 }
 
-/* Stats Counter Section*/
+/* Stat counter section */
 
-.stats-counter {
-	background-image: url(WebContent/resources/img/stats-bg.jpg);
+stats-item {
+	color: white;
 }
+
