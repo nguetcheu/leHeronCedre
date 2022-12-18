@@ -1,11 +1,13 @@
-# hotel leHeronCedre app web
-A basic spring mvc/hibernate project, side project for my own interests and practice
+# hotel restaurant  leHeronCedre app web
+ project for Course of POO CS3i
+The HeronCedre is a project that was entrusted to me in the Object-Oriented 
+programming course in which we had to make a web application with the Java language.
+I opted for the use of the Spring framework, Hibernate and Mysql as DBMS.
+The HreonCedre is a restaurant in france and we need to improve its 
+visibility and perform certain tas digitally such event and customer management
 
-I wanted to review the basics of Spring MVC and Hibernate, what better way then to make CRUD MVC application!
+FTo use tthis project you will add in lib directory this Jar:
 
-I just did this to go over spring's mvc configurations and how a spring application was done before spring boot. I linked this application to a MYSQL database and used the Hibernate framework to make my life easy, Hibernate allows me to query the databse for my mapped objects much easier then a normal standard jdbc connection, not to mention i wont have to keep repeating the jdbc code.
-
-add in lib directory 
 hibernate-release-5.2.0.Final jar file
 
 javax.servlet.jsp.jstl-1.2.1 jar file
