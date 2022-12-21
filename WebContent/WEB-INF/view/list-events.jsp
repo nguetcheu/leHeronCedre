@@ -5,7 +5,7 @@
 <html>
 
 <head>
-	<title>Liste des évenements</title>
+	<title>List of event</title>
 	
 	<!-- reference our style sheet -->
 
@@ -19,7 +19,7 @@
 
 	<div id="wrapper">
 		<div id="header">
-			<h2>LeHeronCedre - Gestion des évenements</h2>
+			<h2>LeHeronCedre - Event Management</h2>
 		</div>
 	</div>
 	
@@ -29,7 +29,7 @@
 		
 			<!-- put new button: Add Customer -->
 		
-			<input type="button" value="Ajouter évenements"
+			<input type="button" value="Add event"
 				   onclick="window.location.href='showFormForAdd'; return false;"
 				   class="add-button"
 			/>
@@ -38,9 +38,9 @@
 		
 			<table>
 				<tr>
-					<th>name</th>
-					<th>date début</th>
-					<th>date fin</th>
+					<th>Name</th>
+					<th>start_date</th>
+					<th>end date</th>
 					<th>Statut</th>
 					<th>Actions</th>
 				</tr>
@@ -69,7 +69,7 @@
 							<a href="${updateLink}">Update</a>
 							|
 							<a href="${deleteLink}"
-							   onclick="if (!(confirm('Etes vous sure de supprimer cet évenement?'))) return false">Delete</a>
+							   onclick="if (!(confirm('Etes vous sure de supprimer cet ï¿½venement?'))) return false">Delete</a>
 						</td>
 						
 					</tr>
@@ -79,6 +79,14 @@
 			</table>
 				
 		</div>
+		
+		<p>
+			<a href="${pageContext.request.contextPath}/customer/list">Go to the customer list</a>
+		</p>
+		
+		<p>
+			<a href="<c:url value="/" />">Back to the Home</a>
+		</p>
 	
 	</div>
 	

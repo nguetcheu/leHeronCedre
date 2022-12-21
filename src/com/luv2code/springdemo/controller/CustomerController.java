@@ -3,7 +3,8 @@ package com.luv2code.springdemo.controller;
 
 import java.util.List;
 
-import org.hibernate.Session;
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,7 +14,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.luv2code.springdemo.dao.CustomerDAO;
 import com.luv2code.springdemo.entity.Customer;
 import com.luv2code.springdemo.service.CustomerService;
 
@@ -23,6 +23,21 @@ public class CustomerController {
 	
 	@Autowired
 	private CustomerService customerService;
+	
+	
+	@GetMapping("/login")
+	public String loginCustomers(HttpServletRequest request, Model model){
+		// read request parameters from the html form
+		String name = request.getParameter("name");
+		
+		String password = request.getParameter("password");
+		
+		model.addAttribute("name", name);
+		model.addAttribute("password", password);
+		
+		return "login";
+		
+	}
 
 	@GetMapping("/list")
 	public String listCustomers(Model theModel){
@@ -73,4 +88,5 @@ public class CustomerController {
 		
 		return "redirect:/customer/list";
 	}
+	
 }

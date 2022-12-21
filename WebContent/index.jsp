@@ -14,6 +14,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
   <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css" />
 </head>
 
@@ -38,13 +40,13 @@
             <a class="nav-link" href="#menu">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Events</a>
+            <a class="nav-link" href="#events">Events</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Admin</a>
+            <a class="nav-link" href="${pageContext.request.contextPath}/customer/login">Admin</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
         <span class="navbar-text">
@@ -89,7 +91,7 @@
           data-aos-delay="150">
           <div class="call-us">
             <h4>Book a Table</h4>
-            <p>+237 696 88 62 92</p>
+            <p>+233 696 88 62 92</p>
           </div>
         </div>
         <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
@@ -176,7 +178,7 @@
             <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
               <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                 <i class="bi bi-inboxes"></i>
-                <h4>user-friendliness</h4>
+                <h4>User-friendliness</h4>
                 <p>Come eat with us as if it were at home what better than a mom's meal without
                   the effort of our dear mothers.
                 </p>
@@ -235,6 +237,7 @@
     </div>
   </section><!-- End Stats Counter Section -->
 
+  <!-- ======= Menu Section ======= -->
   <section id="menu" class="menu">
 
     <div class="container" data-aos="fade-up">
@@ -363,131 +366,149 @@
           </div>
         </div><!-- End Starter Menu Content -->
       </div>
+    </div>
+  </section> <!-- ======= END Menu Section ======= -->
 
-      <!-- ======= Testimonials Section ======= -->
-      <section id="testimonials" class="testimonials section-bg">
-        <div class="container" data-aos="fade-up">
+  <!-- ======= Events Section ======= -->
+  <section id="events" class="why-us section-ev">
+    <div class="section-headerev">
+      <h2>Events</h2>
+      <p>Share <span>Your Moments</span> In Our Restaurant</p>
+    </div>
 
-          <div class="section-header">
-            <h2>Testimonials</h2>
-            <p>What Are They <span>Saying About Us</span></p>
-          </div>
+    <div class="container" data-aos="fade-up">
 
-          <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
-            <div class="swiper-wrapper">
+      <div class="col-lg-12 d-flex align-items-center">
+        <div class="row gy-4">
 
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="row gy-4 justify-content-center">
-                    <div class="col-lg-6">
-                      <div class="testimonial-content">
-                        <p>
-                          <i class="bi bi-quote quote-icon-left"></i>
-                          Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                          Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                          <i class="bi bi-quote quote-icon-right"></i>
-                        </p>
-                        <h3>Saul Goodman</h3>
-                        <h4>Ceo &amp; Founder</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-2 text-center">
-                      <img src="${pageContext.request.contextPath}/resources/img/testimonials/menu-item-1.png" class="img-fluid testimonial-img" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div><!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="row gy-4 justify-content-center">
-                    <div class="col-lg-6">
-                      <div class="testimonial-content">
-                        <p>
-                          <i class="bi bi-quote quote-icon-left"></i>
-                          Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
-                          malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                          <i class="bi bi-quote quote-icon-right"></i>
-                        </p>
-                        <h3>Sara Wilsson</h3>
-                        <h4>Designer</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-2 text-center">
-                      <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div><!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="row gy-4 justify-content-center">
-                    <div class="col-lg-6">
-                      <div class="testimonial-content">
-                        <p>
-                          <i class="bi bi-quote quote-icon-left"></i>
-                          Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
-                          minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                          <i class="bi bi-quote quote-icon-right"></i>
-                        </p>
-                        <h3>Jena Karlis</h3>
-                        <h4>Store Owner</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-2 text-center">
-                      <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div><!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="row gy-4 justify-content-center">
-                    <div class="col-lg-6">
-                      <div class="testimonial-content">
-                        <p>
-                          <i class="bi bi-quote quote-icon-left"></i>
-                          Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam
-                          enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi
-                          cillum quid.
-                          <i class="bi bi-quote quote-icon-right"></i>
-                        </p>
-                        <h3>John Larson</h3>
-                        <h4>Entrepreneur</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-2 text-center">
-                      <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div><!-- End testimonial item -->
-
+          <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box d-flex flex-column justify-content-center align-items-center"
+              style="background-image: url(resources/img/events/events-3.jpg); color: white;">
+              <h3>Custom Parties</h3>
+              <p style="color: white;">Your private events will no longer be the same with us and you will see</p>
+              <div class="price align-self-start">$99</div>
             </div>
-            <div class="swiper-pagination"></div>
+          </div><!-- End event item -->
+
+          <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box d-flex flex-column justify-content-center align-items-center"
+              style="background-image: url(resources/img/events/events-5.jpg); color: white;">
+              <h3>Spa</h3>
+              <p style="color: white;">A spa session can only do you good. This water comes from the Bay of somme</p>
+              <div class="price align-self-start">$59</div>
+            </div>
+          </div><!-- End event item -->
+
+          <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box d-flex flex-column justify-content-center align-items-center"
+              style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(resources/img/events/events-1.jpg); color: white;">
+              <h3>Birthday parties</h3>
+              <p style="color: white;">One more year by your side is a real honor happy birthday in advance</p>
+              <div class="price align-self-start">$59</div>
+            </div>
+          </div><!-- End event item -->
+
+          <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box d-flex flex-column justify-content-center align-items-center"
+              style="background-image: url(resources/img/events/events-2.jpg); color: white;">
+              <h3>Museum visit</h3>
+              <p style="color: white;">The history of the Bay of somme is vast and so edyfying. come and discover the
+                most beautiful regions of france</p>
+              <div class="price align-self-start" style="color: black;">$10</div>
+            </div>
+          </div><!-- End event item -->
+
+          <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box d-flex flex-column justify-content-center align-items-center"
+              style="background-image: url(resources/img/events/events-3.jpg); color: white;">
+              <h3>Bicycles Plan</h3>
+              <p style="color: white;">A bike excursion to our beautiful city in the North of france</p>
+              <div class="price align-self-start">$30</div>
+            </div>
+          </div><!-- End event item -->
+
+          <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box d-flex flex-column justify-content-center align-items-center"
+              style="background-image: url(resources/img/events/events-4.jpg); color: white;">
+              <h3>Massage</h3>
+              <p style="color: white;">Your well being our ultimate priority</p>
+              <div class="price align-self-start">$35</div>
+            </div>
+          </div><!-- End event item -->
+
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Events Section -->
+
+  <!-- ======= Contact ======= -->
+  <footer id="contact" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Address</h4>
+            <p>
+              A108 Somme Street <br>
+              Bay of Somme, SM 357457 - FR<br>
+            </p>
           </div>
 
         </div>
-      </section><!-- End Testimonials Section -->
-  </section>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Reservations</h4>
+            <p>
+              <strong>Phone:</strong> +233 696886292<br>
+              <strong>Email:</strong> LeHeronCedre@gmail.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Mon-Sat: 06AM</strong> - 11PM<br>
+              Sunday: Closed
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>NKD CSI3 DLW</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#">Nguetcheu dominique</a>
+      </div>
+    </div>
+
+  </footer><!-- End Contact -->
+  <!-- End Contact -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
 
 </body>
 

@@ -5,7 +5,7 @@
 <html>
 
 <head>
-	<title>Liste des Clients</title>
+	<title>List of customer</title>
 	
 	<!-- reference our style sheet -->
 
@@ -15,11 +15,12 @@
 
 </head>
 
+
 <body>
 
 	<div id="wrapper">
 		<div id="header">
-			<h2>LeHeronCedre - Gestion des clients</h2>
+			<h2>LeHeronCedre - Customer management</h2>
 		</div>
 	</div>
 	
@@ -29,7 +30,7 @@
 		
 			<!-- put new button: Add Customer -->
 		
-			<input type="button" value="Ajouter Client"
+			<input type="button" value="Add customer"
 				   onclick="window.location.href='showFormForAdd'; return false;"
 				   class="add-button"
 			/>
@@ -38,8 +39,8 @@
 		
 			<table>
 				<tr>
-					<th>Nom</th>
-					<th>Prénom</th>
+					<th>Name</th>
+					<th>Prenom</th>
 					<th>Email</th>
 					<th>Action</th>
 				</tr>
@@ -58,7 +59,7 @@
 					</c:url>					
 					
 					<tr>
-						<td> ${tempCustomer.name} </td>
+						<td> ${tempCustomer.firstName} </td>
 						<td> ${tempCustomer.lastName} </td>
 						<td> ${tempCustomer.email} </td>
 						
@@ -77,7 +78,14 @@
 			</table>
 				
 		</div>
-	
+		
+		<p>
+			<a href="${pageContext.request.contextPath}/event/list">Go to the event list</a>
+		</p>
+		
+		<p>
+			<a href="<c:url value="/" />">Back to the Home</a>
+		</p>
 	</div>
 	
 

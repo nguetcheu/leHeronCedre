@@ -4,7 +4,7 @@
 <html>
 
 <head>
-	<title>Enregistrer Client</title>
+	<title>Save customer</title>
 
 	<link type="text/css"
 		  rel="stylesheet"
@@ -19,12 +19,12 @@
 	
 	<div id="wrapper">
 		<div id="header">
-			<h2>LeHeronCedre - Gestion des clients</h2>
+			<h2>LeHeronCedre - Customer management</h2>
 		</div>
 	</div>
 
 	<div id="container">
-		<h3>Sauvegarder client</h3>
+		<h3>Save customer</h3>
 	
 		<form:form action="saveCustomer" modelAttribute="customer" method="POST">
 
@@ -34,12 +34,12 @@
 			<table>
 				<tbody>
 					<tr>
-						<td><label>Nom:</label></td>
+						<td><label>Name:</label></td>
 						<td><form:input path="firstName" /></td>
 					</tr>
 				
 					<tr>
-						<td><label>Prénom:</label></td>
+						<td><label>Prenom:</label></td>
 						<td><form:input path="lastName" /></td>
 					</tr>
 
@@ -50,7 +50,7 @@
 
 					<tr>
 						<td><label></label></td>
-						<td><input type="submit" value="enregistrer" class="save" /></td>
+						<td><input type="submit" value="save" class="save" /></td>
 					</tr>
 
 				
@@ -63,7 +63,7 @@
 		<div style="clear; both;"></div>
 		
 		<p>
-			<a href="${pageContext.request.contextPath}/customer/list">retour a la liste</a>
+			<a href="${pageContext.request.contextPath}/customer/list">Back to the list</a>
 		</p>
 	
 	</div>

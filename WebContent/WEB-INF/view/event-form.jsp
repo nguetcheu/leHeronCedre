@@ -4,7 +4,7 @@
 <html>
 
 <head>
-	<title>Enregistrer évenement</title>
+	<title>Save event </title>
 
 	<link type="text/css"
 		  rel="stylesheet"
@@ -19,12 +19,12 @@
 	
 	<div id="wrapper">
 		<div id="header">
-			<h2>LeHeronCedre - Gestion des évenements</h2>
+			<h2>LeHeronCedre - Event management</h2>
 		</div>
 	</div>
 
 	<div id="container">
-		<h3>Enregistrer évenement</h3>
+		<h3>Save event</h3>
 	
 		<form:form action="saveEvent" modelAttribute="event" method="POST">
 
@@ -39,12 +39,12 @@
 					</tr>
 				
 					<tr>
-						<td><label>date début:</label></td>
+						<td><label>start date:</label></td>
 						<td><form:input type="date" path="start_date" /></td>
 					</tr>
 
 					<tr>
-						<td><label>date fin:</label></td>
+						<td><label>end date:</label></td>
 						<td><form:input type="date" path="end_date" /></td>
 					</tr>
 					
@@ -55,7 +55,7 @@
 
 					<tr>
 						<td><label></label></td>
-						<td><input type="submit" value="enregistrer" class="save" /></td>
+						<td><input type="submit" value="save" class="save" /></td>
 					</tr>
 
 				
@@ -68,7 +68,7 @@
 		<div style="clear; both;"></div>
 		
 		<p>
-			<a href="${pageContext.request.contextPath}/event/list">retour a la liste</a>
+			<a href="${pageContext.request.contextPath}/event/list">Back to the event list</a>
 		</p>
 	
 	</div>
