@@ -91,6 +91,10 @@
 
 					</form:form>
 					
+					<c:if test="${ (name != resultatnom) || (password != resultatpassword) }" var="variable">
+    					<p>veuillez saisir vos identifiants</p>
+					</c:if>
+					
 					<c:if test="${ (name == resultatnom) && (password == resultatpassword) }" var="variable">
     					<a class="nav-link" href="${pageContext.request.contextPath}/customer/list">Cutomers</a>
     					<a class="nav-link" href="${pageContext.request.contextPath}/event/list">Events</a>

@@ -22,12 +22,12 @@ public class EventController {
 	private EventService eventService;
 
 	@GetMapping("/list")
-	public String listCustomers(Model theModel){
+	public String listEvents(Model theModel){
 		
-		// get the customers from the dao
+		// get the events from the dao
 		List<Event> theEvents = eventService.getEvents();
 		
-		// Add the customers to the model
+		// Add the events to the model
 		theModel.addAttribute("events", theEvents);
 		
 		return  "list-events";
@@ -43,9 +43,9 @@ public class EventController {
 	}
 	
 	@PostMapping("/saveEvent")
-	public String saveCustomer(@ModelAttribute("event") Event theEvent){
+	public String saveEvent(@ModelAttribute("event") Event theEvent){
 		
-		// save the customer using our service 
+		// save the event using our service 
 		eventService.saveEvent(theEvent);
 		
 		return "redirect:/event/list";
@@ -54,10 +54,10 @@ public class EventController {
 	@GetMapping("showFormForUpdate")
 	public String showFormForUpdate(@RequestParam("eventId") int theId, Model theModel) {
 		
-		// get the customer from the database 
+		// get the event from the database 
 		Event theEvent = eventService.getEvent(theId);
 		
-		// set customer as a model attribute to pre-populate the form
+		// set event as a model attribute to pre-populate the form
 		theModel.addAttribute("event", theEvent);
 		
 		// send over to our form
@@ -65,7 +65,7 @@ public class EventController {
 	}
 	
 	@GetMapping("delete")
-	public String deleteCustomer( @RequestParam("eventId") int theId){
+	public String deleteEvent( @RequestParam("eventId") int theId){
 		eventService.deleteEvent(theId);
 		
 		return "redirect:/event/list";
