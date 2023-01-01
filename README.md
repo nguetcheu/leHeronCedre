@@ -6,7 +6,7 @@ I opted for the use of the Spring framework, Hibernate and Mysql as DBMS.
 The HreonCedre is a restaurant in france and we need to improve its 
 visibility and perform certain tas digitally such event and customer management
 
-FTo use tthis project you will add in lib directory this Jar:
+To use tthis project you will add in lib directory this Jar:
 
 hibernate-release-5.2.0.Final jar file
 
